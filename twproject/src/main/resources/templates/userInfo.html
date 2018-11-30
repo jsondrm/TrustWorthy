@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户个人信息</title>
+</head>
+<body>
+<h1>个人信息</h1>
+<p th:text="'用户名: ' + ${user.username}"/>
+<p th:text="'密码：'+ ${user.password}"/>
+<p th:text="'角色：'+ ${user.role}"/>
+<a href="/user/saveUser">Add another user</a>
+</body>
+</html>
